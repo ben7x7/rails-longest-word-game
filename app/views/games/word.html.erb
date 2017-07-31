@@ -1,0 +1,12 @@
+<h2>Welcome to number and letters game !</h2>
+
+<p>Give a try ! Here is the grid : </p>
+<p><%= @grid %></p>
+
+<form action="/score">
+  <label>Your shot</label>
+  <input type="text" name="shot">
+  <input type="hidden" name="grid" value="<%= @grid %>">
+  <input type="hidden" name="start" value="<%= @start_time %>">
+  <button>Try</button>
+</form>
